@@ -1,0 +1,43 @@
+cloudkey123456
+
+Alias ::  zhiliangyun
+
+应用程序：质量云
+
+包名：com.midian.qualitycloud
+
+签名：af444a91403d0a1820d71fcf995e647a
+
+输入密钥库口令:
+
+密钥库类型: JKS
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: zhiliangyun
+创建日期: 2016-9-8
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=midian, OU=midian, O=midian, L=广州市, ST=广东省, C=中国
+发布者: CN=midian, OU=midian, O=midian, L=广州市, ST=广东省, C=中国
+序列号: 796970f6
+有效期开始日期: Thu Sep 08 18:51:50 GMT+08:00 2016, 截止日期: Sat Aug 15 18:51:5
+0 GMT+08:00 2116
+证书指纹:
+         MD5: AF:44:4A:91:40:3D:0A:18:20:D7:1F:CF:99:5E:64:7A
+         SHA1: 4E:B3:CC:17:ED:0D:4B:F4:E1:79:8E:88:B9:FB:2D:27:EA:54:D1:A4
+         SHA256: D7:12:AA:FE:32:52:C7:4B:62:55:6D:B3:FE:96:B9:36:B0:91:A7:EA:46:
+5D:C2:2E:5B:CF:A1:A1:A2:DF:5A:1C
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: C4 DB C6 9A 92 09 3F 0A   12 6D E1 47 59 0D EB 64  ......?..m.GY..d
+0010: CF 60 FC 78                                        .`.x
+]
