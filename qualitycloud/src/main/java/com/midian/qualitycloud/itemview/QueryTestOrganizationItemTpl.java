@@ -73,7 +73,11 @@ private String stateStr;
 
 			name_query_test.setText(getName(checkOrgs.getCheck_org_name()));
 //		}
-		distance_query_test.setText(checkOrgs.getDistance());
+		if("0.0".equals(checkOrgs.getLat())||"0.0".equals(checkOrgs.getLon())){
+			distance_query_test.setText("待确定");
+		}else {
+			distance_query_test.setText(checkOrgs.getDistance());
+		}
 		address_query_test.setText(checkOrgs.getAddress());
 		tel = checkOrgs.getTel();
 		name = checkOrgs.getCheck_org_name();

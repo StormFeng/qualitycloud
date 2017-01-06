@@ -82,8 +82,12 @@ public class NearbyElevatorPlaygroundListActivity extends BaseFragmentActivity
 								finish();
 							} else {
 								playground.putBoolean("isSwitch", true);
+								// TODO: 2016/12/6 0006
+//								UIHelper.jumpForResult(_activity,
+//										NearbyElevatorOrPlaygroundMap.class,
+//										playground, 1007);
 								UIHelper.jumpForResult(_activity,
-										NearbyElevatorOrPlaygroundMap.class,
+										ElevatorMap.class,
 										playground, 1007);
 							}
 						}
@@ -99,8 +103,11 @@ public class NearbyElevatorPlaygroundListActivity extends BaseFragmentActivity
 						finish();
 					} else {
 						playground.putBoolean("isSwitch", true);
+//						UIHelper.jumpForResult(_activity,
+//								NearbyElevatorOrPlaygroundMap.class,
+//								playground, 1007);
 						UIHelper.jumpForResult(_activity,
-								NearbyElevatorOrPlaygroundMap.class,
+								ElevatorMap.class,
 								playground, 1007);
 					}
 				}

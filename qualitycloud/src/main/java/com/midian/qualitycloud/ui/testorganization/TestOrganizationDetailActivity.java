@@ -223,6 +223,10 @@ public class TestOrganizationDetailActivity extends BaseActivity {
 			_activity.startActivity(intent);
 			break;
 		case R.id.navigation_query_test_rl:
+			if("0.0".equals(lat)||"0.0".equals(lon)){
+				UIHelper.t(_activity,"暂未提供导航服务");
+				return;
+			}
 			gotoBaiduMap();
 			break;
 		case R.id.like_test_img:
@@ -338,7 +342,11 @@ public class TestOrganizationDetailActivity extends BaseActivity {
 //					Log.d("wqf",detailBean.getContent().getDistance());
 //					distance_query_test.setText(detailBean.getContent()
 //							.getDistance());
-					distance_query_test.setText(distance);
+					if("0.0".equals(lat)||"0.0".equals(lon)){
+						distance_query_test.setText("待确定");
+					}else{
+						distance_query_test.setText(distance);
+					}
 					name_query_test.setText(getName(detailBean.getContent()
 							.getCheck_org_name()));
 					setState(detailBean.getContent().getEffective());
